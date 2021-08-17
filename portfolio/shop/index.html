@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Demo</title>
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="promo">
+      <div class="promo__banner">
+        <div class="promo__feedback">
+          <img class="promo__feedback-img" src="./img/promo__feedback.jpg" alt="Feedback">
+          <div class="promo__feedback-social">
+            <a href="#" class="promo__feedback-social-link"><img class="promo__feedback-social-img"
+                src="./img/promo__feedback-hotline.jpg" alt="Feedback hotline"></a>
+            <a href="#" class="promo__feedback-social-link"><img class="promo__feedback-social-img"
+                src="./img/promo__feedback-facebook.jpg" alt="Feedback facebook"></a>
+            <a href="#" class="promo__feedback-social-link"><img class="promo__feedback-social-img"
+                src="./img/promo__feedback-priceua.jpg" alt="Feedback price.ua"></a>
+          </div>
+        </div>
+        <div class="promo__bonus">
+          <a class="promo__bonus-link" href="#"><img class="promo__bonus-img" src="./img/promo__bonus.jpg"
+              alt="Bonus"></a>
+        </div>
+      </div>
+      <div class="promo__stock">
+        <div class="promo__time-box">
+          <p class="promo__time-text">действует до <time datetime="2019-07-11" class="promo__time">11.07.2019</time></p>
+          <p class="promo__stock-text">до конца акции</p>
+        </div>
+        <div class="promo__timer">
+          <div class="timer">
+            <div class="timer__number">
+              <span class="hours timer__time"></span>
+              <span class="timer__text">часов</span>
+            </div>
+            <span class="timer__divider">:</span>
+            <div class="timer__number">
+              <span class="minutes timer__time"></span>
+              <span class="timer__text">мин.</span>
+            </div>
+            <span class="timer__divider">:</span>
+            <div class="timer__number">
+              <span class="seconds timer__time"></span>
+              <span class="timer__text">сек.</span>
+            </div>
+          </div>
+        </div>
+        <div class="promo__social">
+          <div class="separator"></div>
+          <p class="promo__social-text">Поделитесь акцией:
+            <a class="promo__social-link" href="#"><img src="./img/icons/fb-icon.jpg" alt="Facebook"></a>
+            <a class="promo__social-link" href="#"><img src="./img/icons/telegram-icon.jpg" alt="Telegram"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="holiday">
+      <h1 class="holiday__title">Праздничные скидки для наших именинников</h1>
+      <p class="holiday__text">День рождение - время шариков и хорошего настроения! Мы хотим стать частью этого
+        праздничного позитива и дарим свои подарки - персональную скидку. Персональная скидка предоставляется в День
+        рождения, а также в промежутке 7 дней до и 30 дней после Дня рождения. Скидка не пересекается и не суммируется с
+        другими акциями и предложениями.</p>
+    </section>
+
+    <div class="container">
+      <aside class="sidebar">
+        <div class="close"><i class="fa fa-times close__icon" aria-hidden="true"></i></div>
+        <form action="#">
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Смартфоны и телефоны <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Смартфон 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телефон 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Смартфон 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телефон 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Смартфон 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Планшеты и ноутбуки <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Планшет 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Ноутбук 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Планшет 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Ноутбук 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Планшет 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Аудиотехника <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Аудиотехника 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Аудиотехника 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Аудиотехника 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Аудиотехника 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Аудиотехника 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Кондиционеры <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Кондиционеры 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Кондиционеры 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Кондиционеры 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Кондиционеры 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Кондиционеры 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Телевизоры <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Телевизоры 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телевизоры 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телевизоры 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телевизоры 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Телевизоры 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Кропнобытовая техника <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Техника 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Техника 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Техника 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Техника 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Техника 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Микроволновки <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Микроволновки 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Микроволновки 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Микроволновки 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Микроволновки 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Микроволновки 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Блендеры <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Блендеры 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Блендеры 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Блендеры 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Блендеры 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Блендеры 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Утюги <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Утюги 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Утюги 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Утюги 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Утюги 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Утюги 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Электрочайники <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item"><a href="#" class="accordion__link">Электрочайники 1 <span
+                      class="accordion__count">100</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Электрочайники 2 <span
+                      class="accordion__count">21</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Электрочайники 3 <span
+                      class="accordion__count">6</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Электрочайники 4 <span
+                      class="accordion__count">13</span></a></li>
+                <li class="accordion__item"><a href="#" class="accordion__link">Электрочайники 5 <span
+                      class="accordion__count">33</span></a></li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+
+          <div class="price">
+            <p class="price__title">Цена, ₴</p>
+            <div class="price__container">
+              <div class="price__range">
+                От <input type="text" class="price__range_left" />
+                До <input type="text" class="price__range_right" />
+              </div>
+              <div class="range"></div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button type="button" class="accordion__btn">Бренд <img class="accordion__arrow-icon"
+                src="./img/icons/sidebar__arrow-icon.jpg" alt="Arrow"></button>
+            <div class="accordion__panel">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <label class="accordion__label"><span class="accordion__link">Samsung <span
+                        class="accordion__count">100</span></span>
+                    <input type="checkbox" checked="checked" class="accordion__input">
+                    <span class="accordion__checkmark"></span>
+                  </label>
+                </li>
+                <li class="accordion__item">
+                  <label class="accordion__label"><span class="accordion__link">Huawei <span
+                        class="accordion__count">21</span></span>
+                    <input type="checkbox" class="accordion__input">
+                    <span class="accordion__checkmark"></span>
+                  </label>
+                </li>
+                <li class="accordion__item">
+                  <label class="accordion__label"><span class="accordion__link">Apple <span
+                        class="accordion__count">6</span></span>
+                    <input type="checkbox" class="accordion__input">
+                    <span class="accordion__checkmark"></span>
+                  </label>
+                </li>
+                <li class="accordion__item">
+                  <label class="accordion__label"><span class="accordion__link">Honor <span
+                        class="accordion__count">14</span></span>
+                    <input type="checkbox" class="accordion__input">
+                    <span class="accordion__checkmark"></span>
+                  </label>
+                </li>
+                <li class="accordion__item">
+                  <label class="accordion__label"><span class="accordion__link">Xiaomi <span
+                        class="accordion__count">33</span></span>
+                    <input type="checkbox" class="accordion__input">
+                    <span class="accordion__checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+              <a href="#" class="accordion__link-more">Показать все</a>
+            </div>
+          </div>
+        </form>
+      </aside>
+      <div class="main">
+        <section class="catalog">
+          <h2 class="section__title">Кондиционеры</h2>
+          <div class="catalog__sort-container">
+            <button class="btn btn_large">фильтры</button>
+            <div class="catalog__price">
+              <label for="switch1" class="catalog__left-check catalog__check active">Полная цена</label>
+              <div class="switch">
+                <label class="switch__label">
+                  <input type="checkbox" id="switch1" class="switch__input">
+                  <span class="switch__slider round"></span>
+                </label>
+              </div>
+              <label for="switch1" class="catalog__right-check catalog__check">Цена в месяц</label>
+            </div>
+            <div class="catalog__offset"></div>
+            <div class="catalog__sort-list">
+              <p class="catalog__sort-title">Сортировка</p>
+              <a href="#" class="catalog__sort-item">популярные</a>
+              <a href="#" class="catalog__sort-item active">сначала дорогие</a>
+              <a href="#" class="catalog__sort-item">сначала дешевые</a>
+            </div>
+          </div>
+          <div class="catalog__wrapper">
+            <div class="catalog__list">
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product1.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product2.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product3.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product4.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product1.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product2.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product3.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <a href="#" class="card card__more-link">
+                <div class="card__more-container">
+                  <div class="card__more-item">
+                    <div class="card__more-icon">
+                      <i class="fa fa-angle-double-right card__more-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="card__more-text">показать еще 7 товаров</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__pagination">
+              <ul class="pagination">
+                <li class="pagination__item"><a href="#" class="pagination__link pagination__link_active">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item">...</li>
+                <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link"><i
+                      class="fa fa-angle-right pagination__icon" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="catalog">
+          <h2 class="section__title">Холодильники</h2>
+          <div class="catalog__sort-container">
+            <button class="btn btn_large">фильтры</button>
+            <div class="catalog__price">
+              <label for="switch2" class="catalog__left-check catalog__check active">Полная цена</label>
+              <div class="switch">
+                <label class="switch__label">
+                  <input type="checkbox" id="switch2" class="switch__input">
+                  <span class="switch__slider round"></span>
+                </label>
+              </div>
+              <label for="switch2" class="catalog__right-check catalog__check">Цена в месяц</label>
+            </div>
+            <div class="catalog__offset"></div>
+            <div class="catalog__sort-list">
+              <p class="catalog__sort-title">Сортировка</p>
+              <a href="#" class="catalog__sort-item">популярные</a>
+              <a href="#" class="catalog__sort-item active">сначала дорогие</a>
+              <a href="#" class="catalog__sort-item">сначала дешевые</a>
+            </div>
+          </div>
+          <div class="catalog__wrapper">
+            <div class="catalog__list">
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product1.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product2.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product3.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product4.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product1.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item hidden">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img hidden">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product2.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale hidden">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  5 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__item">
+                  <span class="card__item-price">лучшая цена</span>
+                  <span class="card__item-super-cashback"><img class="card__supercashback-img"
+                      src="./img/icons/supercashback-icon.jpg" alt="cashback">суперкешбэк +1100₴</span>
+                </div>
+                <div class="card__container">
+                  <div class="card__credit">
+                    <img src="./img/icons/present-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/monobank-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/privat-icon.jpg" alt="credit" class="card__credit-img">
+                    <img src="./img/icons/credit-icon.jpg" alt="credit" class="card__credit-img">
+                  </div>
+                  <a href="#"><img class="card__product-img" src="./img/product3.jpg" alt="Product"></a>
+                </div>
+                <h3 class="card__title"><a class="card__title-link" href="#">Планшет APPLE iPad Pro A1876 12.9WF 64GB
+                    Space Grey (MTEL2RK/A)</a></h3>
+                <div class="card__feedback">
+                  <div class="card__rating">
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star card__rating-star_active" aria-hidden="true"></i>
+                    <i class="fa fa-star card__rating-star" aria-hidden="true"></i>
+                    <div class="card__feedback-count">
+                      <a href="#" class="card__count-link"><i class="fa fa-commenting card__count-icon"
+                          aria-hidden="true"></i> 10 230</a>
+                    </div>
+                  </div>
+                  <div class="card__code">
+                    Код: 6418051
+                  </div>
+                </div>
+                <div class="card__sale">
+                  <p class="card__sale-price">137 999</p>
+                  <p class="card__sale-discount">- 6 000</p>
+                </div>
+                <div class="card__price">
+                  11 999₴
+                </div>
+                <div class="card__box">
+                  <a href="#" class="card__credit-price">От 400₴/мес.</a>
+                  <p class="card__cashback-price"><img src="./img/icons/cashback-icon.jpg" alt="icon">Кешбэк: 241₴</p>
+                </div>
+                <div class="card__btn">
+                  <button class="btn"><i class="fa fa-shopping-cart btn__icon" aria-hidden="true"></i> Купить</button>
+                  <a class="btn__link active" href="#">Забрать сегодня</a>
+                </div>
+              </div>
+
+              <a href="#" class="card card__more-link">
+                <div class="card__more-container">
+                  <div class="card__more-item">
+                    <div class="card__more-icon">
+                      <i class="fa fa-angle-double-right card__more-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="card__more-text">показать еще 7 товаров</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__pagination">
+              <ul class="pagination">
+                <li class="pagination__item"><a href="#" class="pagination__link pagination__link_active">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item">...</li>
+                <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link"><i
+                      class="fa fa-angle-right pagination__icon" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="more-stock">
+          <h2 class="section__title">Другие акции</h2>
+          <div class="more-stock__slider-list">
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img1.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img2.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img3.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img1.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img2.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="more-stock__slider-item">
+              <div class="more-stock__img">
+                <a href="#" class="more-stock__item-link">
+                  <img class="more-stock__item-img" src="./img/store-img3.jpg" alt="Stock">
+                </a>
+              </div>
+              <div class="more-stock__content">
+                <div class="more-stock__discount">
+                  <span class="more-stock__dicsount-text">скидка</span>
+                  <span class="more-stock__dicsount-date">с 12 июня по 11 июля</span>
+                </div>
+                <h3 class="more-stock__title"><a href="#" class="more-stock__title-link">Скидка до 8% на смартфоны
+                    Huawei P Smart 2019</a></h3>
+                <div class="separator separator_stock"></div>
+                <div class="more-stock__end">
+                  <p class="more-stock__text">До конца акции</p>
+                  <p class="more-stock__days">64 дня</p>
+                </div>
+                <div class="more-stock__footer">
+                  <div class="more-stock__first-line"></div>
+                  <div class="more-stock__last-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn_medium">смотреть все акции</button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
