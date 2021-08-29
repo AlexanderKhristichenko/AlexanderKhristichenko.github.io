@@ -20,15 +20,17 @@ $(document).ready(function () {
 
 });
 
-// $(window).on('load', function () {
+$(window).on('load', function () {
 
-//     $('.warp-loading').fadeOut();
-
-// });
-
-setTimeout(function () {
     $('.warp-loading').fadeOut();
-}, 2000)
+
+});
+
+// setTimeout(function () {
+//     $('.warp-loading').fadeOut();
+// }, 3000)
+
+// document.querySelector('body').style.display = 'none';
 
 const headerNav = document.querySelector('.global-header')
 
