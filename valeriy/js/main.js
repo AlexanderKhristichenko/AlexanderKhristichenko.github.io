@@ -20,11 +20,15 @@ $(document).ready(function () {
 
 });
 
-$(window).on('load', function () {
+// $(window).on('load', function () {
 
+//     $('.warp-loading').fadeOut();
+
+// });
+
+setTimeout(function () {
     $('.warp-loading').fadeOut();
-
-});
+}, 2000)
 
 const headerNav = document.querySelector('.global-header')
 
