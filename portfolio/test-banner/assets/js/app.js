@@ -13,12 +13,19 @@ setInterval(() => {
   order.classList.remove("banner_order-active");
 }, 5470);
 
-setInterval(() => {
+const addClass = () => {
   title.classList.add("banner_title-active");
   price.classList.add("banner_price-active");
   img2.classList.add("banner_img-active");
   order.classList.add("banner_order-active");
-}, 5500);
+};
+
+const dataFunc = (loop, product, currency) => {
+  link.setAttribute("href", `${product[loop].link}`);
+  title.innerHTML = product[loop].model;
+  price.textContent = `${currency} ${product[loop].price}`;
+  img.setAttribute("src", `${product[loop].image_url}`);
+};
 
 fetch(requestURL)
   .then((response) => {
@@ -26,18 +33,15 @@ fetch(requestURL)
   })
   .then((data) => {
     const product = data.sneakers;
+    const currency = data.currency;
     let i = 0;
-    link.setAttribute("href", `${product[i + 5].link}`);
-    title.innerHTML = product[i + 5].model;
-    price.textContent = `${data.currency} ${product[i + 5].price}`;
-    img.setAttribute("src", `${product[i + 5].image_url}`);
+    let j = 1;
+    dataFunc(i, product, currency);
     setInterval(() => {
-      if (i == product.length) i = 0;
-      link.setAttribute("href", `${product[i].link}`);
-      title.innerHTML = product[i].model;
-      price.textContent = `${data.currency} ${product[i].price}`;
-      img.setAttribute("src", `${product[i].image_url}`);
-      i++;
+      if (j == product.length) j = 0;
+      dataFunc(j, product, currency);
+      j++;
+      addClass();
     }, 5500);
   })
   .catch(console.error);
