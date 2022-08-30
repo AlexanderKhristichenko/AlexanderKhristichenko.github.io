@@ -1,30 +1,51 @@
 const requestURL = "https://solovey.com.ua/test/data.json";
-const title = document.querySelector(".banner_title");
-const price = document.querySelector(".banner_price");
-const img = document.querySelector(".banner_img img");
-const img2 = document.querySelector(".banner_img");
-const link = document.querySelector(".banner_link");
-const order = document.querySelector(".banner_order");
+const logoLink = "./assets/img/NikeLogo.svg";
+const banner = document.querySelector(".banner");
 
-setInterval(() => {
-  title.classList.remove("banner_title-active");
-  price.classList.remove("banner_price-active");
-  img2.classList.remove("banner_img-active");
-  order.classList.remove("banner_order-active");
-}, 5470);
-
-const addClass = () => {
-  title.classList.add("banner_title-active");
-  price.classList.add("banner_price-active");
-  img2.classList.add("banner_img-active");
-  order.classList.add("banner_order-active");
+const setAttributes = (el, attrs) => {
+  for (var key in attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
 };
 
-const dataFunc = (loop, product, currency) => {
-  link.setAttribute("href", `${product[loop].link}`);
-  title.innerHTML = product[loop].model;
-  price.textContent = `${currency} ${product[loop].price}`;
-  img.setAttribute("src", `${product[loop].image_url}`);
+const addingElements = (product, data) => {
+  const link = document.createElement("a");
+  setAttributes(link, {
+    href: product.link,
+    class: "banner_link",
+  });
+  banner.append(link);
+
+  const logo = document.createElement("img");
+  setAttributes(logo, {
+    src: logoLink,
+    class: "banner_logo",
+    alt: "Nike Logo",
+  });
+  link.append(logo);
+
+  const title = document.createElement("h2");
+  title.innerHTML = product.model;
+  title.className = "banner_title";
+  link.append(title);
+
+  const price = document.createElement("p");
+  setAttributes(price, { class: "banner_price btn" });
+  price.textContent = `${data.currency} ${product.price}`;
+  link.append(price);
+
+  const img = document.createElement("img");
+  setAttributes(img, {
+    src: product.image_url,
+    class: "banner_img",
+    alt: product.model,
+  });
+  link.append(img);
+
+  const order = document.createElement("p");
+  setAttributes(order, { class: "banner_order btn" });
+  order.textContent = "order now";
+  link.append(order);
 };
 
 fetch(requestURL)
@@ -32,16 +53,21 @@ fetch(requestURL)
     return response.json();
   })
   .then((data) => {
-    const product = data.sneakers;
-    const currency = data.currency;
+    for (let product of data.sneakers) {
+      addingElements(product, data);
+    }
     let i = 0;
     let j = 1;
-    dataFunc(i, product, currency);
+
+    const bannerLink = document.querySelectorAll(".banner_link");
+    bannerLink[i].classList.add("banner-active");
     setInterval(() => {
-      if (j == product.length) j = 0;
-      dataFunc(j, product, currency);
+      if (i == bannerLink.length) i = 0;
+      if (j == bannerLink.length) j = 0;
+      bannerLink[i].classList.remove("banner-active");
+      bannerLink[j].classList.add("banner-active");
+      i++;
       j++;
-      addClass();
-    }, 5500);
+    }, 5000);
   })
   .catch(console.error);
