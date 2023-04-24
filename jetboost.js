@@ -449,7 +449,7 @@ var JetboostBootstrap = (function () {
                   });
               })();
             var e = window.JETBOOST_SITE_ID,
-              r = window.location.hostname.endsWith("www.demo-wizard.com");
+              r = window.location.hostname.endsWith("demo-wizard.com");
             if (!r && "ckafk0rmgqmeq0704lwprjww7" === e) return !1;
             (function (t, e, r) {
               var o = t + "sites/" + e;
